@@ -12,12 +12,12 @@ except FileExistsError:
     pass
 
 # the funny
-# os.system("color a")
-# os.system("title Sparx Bookwork DB")
+os.system("color a")
+os.system("title Sparx Bookwork DB")
 
 
 def main_menu():
-    os.system("clear")
+    os.system("cls")
     print("///////\n"
           "Welcome to the Sparxmaths Bookwork Database created by theSm1th for internal use.\n"
           "To add an answer, press Enter.\n"
@@ -47,7 +47,7 @@ def add_entry_menu():
     with open("bookwork.json", "r") as db:
         bookwork_dict = json.loads(db.read())
 
-    os.system("clear")
+    os.system("cls")
     print("///////\n"
           "To add a bookwork entry, type the bookwork code, followed by a colon, then the answer to that code.\n"
           "Example:\n"
